@@ -20,3 +20,6 @@ def count(request):
     sorted_words = sorted(WordDict.items(), key=operator.itemgetter(1), reverse=True)
 
     return render(request, 'count.html', {'FullText':FullText, 'count':len(wordlist), 'sorted_words':sorted_words})
+
+def about(reuest):
+    return render(reuest, 'about.html')
